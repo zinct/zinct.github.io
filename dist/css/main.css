@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header ul li + li:before{
+  content: " | ";
+  padding: 0 10px;
+}
