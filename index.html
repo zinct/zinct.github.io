@@ -16,27 +16,27 @@
 <body>
   <div class="container mx-auto">
     <header class="flex justify-between absolute py-3 container mx-auto">
-      <h2 class="font-medium text-xl"><a href="javascript:void(0)">Indra Mahesa</a></h2>
+      <h2 class="font-medium text-xl"><a href="javascript:void(0)">Portfolio</a></h2>
       <ul class="md:flex hidden">
-        <li><a class="px-4 font-light text-lg" href="javascript:void(0)">Home</a></li>
+        <li><a class="px-4 font-light text-lg" href="#home">Home</a></li>
         <li><a class="px-4 font-light text-lg" href="#skills">Skills</a></li>
-        <li><a class="px-4 font-light text-lg" href="javascript:void(0)">Projects</a></li>
+        <li><a class="px-4 font-light text-lg" href="#projects">Projects</a></li>
         <li><a class="px-4 font-light text-lg" href="javascript:void(0)">Contact</a></li>
       </ul>
     </header>
-    <section class="flex items-center h-screen" id="hero">
+    <section class="flex items-center h-screen" id="home">
       <div class="mx-auto">
-        <p class="font-light text-3xl">Hello There !</p>
-        <h2 class="text-6xl font-medium">i’m Indra Mahesa</h2>
-        <p class="font-light text-3xl text-right">i am a Web Developer</p>
-        <a class="bg-teal hover:bg-teal py-2.5 mt-2 px-14 text-white rounded-md float-right" href="javascri[t:void(0)">SEE MY WORK</a>
+        <p class="font-light text-lg md:text-3xl">Hello There !</p>
+        <h2 class="text-4xl md:text-6xl font-medium">i’m Indra Mahesa</h2>
+        <p class="font-light text-md md:text-3xl text-right">i am a Web Developer</p>
+        <a class="bg-teal hover:bg-teal-100 hover:text-black duration-200 py-1.5 md:py-2.5 text-center mt-2 w-full md:w-64 md:px-14 text-white rounded-md float-right" href="#projects">SEE MY WORK</a>
       </div>
-      <div class="mx-auto hidden md:block">
+      <div class="mx-auto hidden md:flex">
         <img class="w-96" src="./dist/img/hero-image.png" alt="Indra Image">
       </div>
     </section>
-    <section class="" id="skills">
-      <h2 class="px-3 mb-10 text-3xl">MY SKILLS</h2>
+    <section id="skills">
+      <h2 class="mb-10 text-3xl">MY SKILLS</h2>
       <div class="grid gap-y-10 grid-cols-1 md:grid-cols-3">
         <div class="grid grid-cols-3">
           <div class="flex row-span-2 self-center justify-self-center justify-center items-center rounded-full w-14 h-14 bg-teal-100">
@@ -180,6 +180,47 @@
         </div>
       </div>
     </section>
+    <section class="mb-52 grid gap-y-10" id="projects">
+      <h1 class="text-3xl mt-24">PROJECTS</h1>
+      <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5">
+        <div class="project-placeholder md:col-start-2 justify-self-end self-center flex justify-center items-center">
+          <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100" src="./dist/img/projects/pos.png" alt="Image of the projects">
+        </div>
+        <div class="md:col-start-1 md:row-start-1">
+          <h2 class="text-2xl md:text-4xl md:mb-6 font-thin">POINT OF SALES + E-COMMERCE</h2>
+          <p class="md:text-xl font-thin">
+            Sebuah website manajemen penjualan dengan berbagai macam fitur yang sangat lengkap serta laporan pembukuan setiap ber transaksi.
+          </p>
+          <p class="md:text-xl font-thin">
+            Website ini juga menawarkan halaman e-commerce untuk mempromosikan produk.
+          </p>
+          <div class="mt-5">
+            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Laravel 7</span>
+            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">VueJs 2</span>
+            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
+            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
+          </div>
+        </div>
+      </div>
+      <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5">
+        <div class="project-placeholder md:col-start-1 justify-self-start self-center flex justify-center items-center">
+          <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100" src="./dist/img/projects/pembayaran-spp.png" alt="Image of the projects">
+        </div>
+        <div class="md:col-start-2 md:row-start-1">
+          <h2 class="text-2xl md:text-4xl md:mb-6 font-thin">YukBayar</h2>
+          <p class="md:text-xl font-thin">  
+            YukBayar adalah sebuah aplikasi yang digunakan untuk kepentingan pembayaran uang SPP dan kegiatan siswa bagi sekolah-sekolah baik negeri maupun swasta.
+          </p>
+          <div class="mt-5">
+            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Laravel 7</span>
+            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">VueJs 2</span>
+            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
+            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 </body>
 </html>
