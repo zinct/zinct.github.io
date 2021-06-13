@@ -2,10 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-header ul li + li:before{
+/* header ul li + li:before{
   content: " | ";
   padding: 0 10px;
-}
+} */
 
 #projects .project-placeholder {
   background-image: url('../img/project-placeholder.png');
