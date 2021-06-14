@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="dist/css/tailwind.css">
   <link rel="stylesheet" href="dist/css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
@@ -15,11 +16,11 @@
 </head>
 <body>
   <div class="grid gap-y-20">
-    <header class="fixed py-3 shadow-md bg-white z-10 w-full" id="header">
-      <div class="container mx-auto flex justify-between">
+    <header class="absolute py-3 z-10 w-full" id="header">
+      <div class="container px-20 mx-auto flex justify-between">
         <h2 class="font-medium text-xl"><a href="javascript:void(0)">Portfolio</a></h2>
         <ul class="md:flex hidden">
-          <li><a class="px-4 font-light text-lg text-gray-600 hover:text-black duration-100" href="#home">Home</a></li>
+          <li><a class="px-4 font-light text-lg text-gray-600 hover:text-black duration-100 active" href="#home">Home</a></li>
           <li><a class="px-4 font-light text-lg text-gray-600 hover:text-black duration-100" href="#about">About</a></li>
           <li><a class="px-4 font-light text-lg text-gray-600 hover:text-black duration-100" href="#skills">Skills</a></li>
           <li><a class="px-4 font-light text-lg text-gray-600 hover:text-black duration-100" href="#projects">Projects</a></li>
@@ -38,13 +39,26 @@
         <img class="w-96" src="./dist/img/hero-image.png" alt="Indra Image">
       </div>
     </section>
-    <section class="bg-teal-100 mb-28" id="about" style="height: 20rem;">
+    <div id="about" class=""></div>
+    <section class="bg-teal-100 mb-28"  data-aos="fade-up" data-aos-once="true" style="height: 20rem;">
       <div class="container mx-auto grid grid-cols-2 h-full">
         <div class="grid grid-cols-2 gap-5 relative -top-14 px-10" style="height: 140%;">
-          <div class="rounded-md shadow-lg bg-white row-span-2 row-start-2"></div>
-          <div class="rounded-md shadow-lg bg-white row-span-2"></div>
-          <div class="rounded-md shadow-lg bg-white row-span-2 row-start-4"></div>
-          <div class="rounded-md shadow-lg bg-white row-span-2"></div>
+          <div class="flex flex-col justify-center items-center rounded-md shadow-lg bg-white row-span-2 row-start-2">
+            <img class="w-14" src="./dist/img/about/teamwork.svg" alt="">
+            <p class="font-medium text-teal text-md uppercase mt-5">Team Work</p>
+          </div>
+          <div class="flex flex-col justify-center items-center rounded-md shadow-lg bg-white row-span-2">
+            <img class="w-14" src="./dist/img/about/empathy.svg" alt="">
+            <p class="font-medium text-teal text-md uppercase mt-5">Empathy</p>
+          </div>
+          <div class="flex flex-col justify-center items-center rounded-md shadow-lg bg-white row-span-2 row-start-4">
+            <img class="w-14" src="./dist/img/about/problem-solving.svg" alt="">
+            <p class="font-medium text-teal text-md uppercase mt-5">Problem Solving</p>
+          </div>
+          <div class="flex flex-col justify-center items-center rounded-md shadow-lg bg-white row-span-2">
+            <img class="w-14" src="./dist/img/about/understandable.svg" alt="">
+            <p class="font-medium text-teal text-md uppercase mt-5">Understandable</p>
+          </div>
         </div>
         <div class="flex flex-col justify-center px-10">
           <h2 class="font-medium text-2xl">About Me</h2>
@@ -52,8 +66,9 @@
         </div>
       </div>
     </section>
-    <div class="container px-4 mx-auto grid gap-y-20">
-      <section id="skills mx-auto">
+    <div class="container px-20 mx-auto grid gap-y-20">
+      <div id="skills" class=""></div>
+      <section data-aos="fade-up" data-aos-once="true">
         <h2 class="mb-10 text-2xl font-bold text-teal">MY SKILLS</h2>
         <div class="grid gap-y-10 grid-cols-1 md:grid-cols-3">
           <div class="grid grid-cols-3">
@@ -166,8 +181,8 @@
                 <path d="m-2.3125e-8 8.9337 49.854 0.1586 14.167 24.47 14.432-24.47 49.547-0.1577-63.834 110.14zm126.98 0.6374-24.36 0.0207-38.476 66.052-38.453-66.052-24.749-0.0194 63.211 107.89zm-25.149-0.008-22.745 0.16758l-15.053 24.647-14.817-24.647-22.794-0.1679 37.731 64.476zM25.997 9.3929l23.002 0.0087M25.997 9.3929l23.002 0.0087" fill="none"></path><path d="m25.997 9.3929 23.002 0.0087l15.036 24.958 14.983-24.956 22.982-0.0057-37.85 65.655z" fill="#35495e"></path><path d="m0.91068 9.5686 25.066-0.1711 38.151 65.658 37.852-65.654 25.11 0.0263-62.966 108.06z" fill="#41b883"></path>
               </svg>
             </div>
-            <h3 class="font-bold text-lg col-span-2">VueJS</h3>
-            <p class="text-gray-500 font-light col-span-2">I have 2 months experience in VueJs.</p>
+            <h3 class="font-bold text-lg col-span-2">Vue</h3>
+            <p class="text-gray-500 font-light col-span-2">I have 2 months experience in Vue.</p>
           </div>
           <div class="grid grid-cols-3">
             <div class="flex row-span-2 self-center justify-self-center justify-center items-center rounded-full w-14 h-14 bg-teal-100">
@@ -198,10 +213,11 @@
           </div>
         </div>
       </section>
-      <section class="mb-52 mx-auto grid gap-y-5" id="projects">
+      <div id="projects" class=""></div>
+      <section class="mb-52 mx-auto grid gap-y-8">
         <h1 class="text-2xl font-bold text-teal">PROJECTS</h1>
-        <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5">
-          <div class="project-placeholder md:col-start-2 justify-self-end self-center flex justify-center items-center">
+        <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5" data-aos="fade-right" data-aos-once="true">
+          <div class="project-placeholder md:col-start-2 justify-self-center self-center flex justify-center items-center">
             <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/pos.png" alt="Image of the projects">
           </div>
           <div class="md:col-start-1 md:row-start-1">
@@ -220,8 +236,8 @@
             </div>
           </div>
         </div>
-        <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5">
-          <div class="project-placeholder md:col-start-1 justify-self-start self-center flex justify-center items-center">
+        <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5" data-aos="fade-left" data-aos-once="true">
+          <div class="project-placeholder md:col-start-1 justify-self-center self-center flex justify-center items-center">
             <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/pembayaran-spp.png" alt="Image of the projects">
           </div>
           <div class="md:col-start-2 md:row-start-1">
@@ -241,31 +257,24 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    const header = document.getElementById('header').offsetTop; // get initial position of the element
-    console.log(header);
-    window.addEventListener('scroll', function() {
-      const currentScroll = window.scrollTop;
-      console.log(currentScroll)
+    AOS.init();
+
+    const header = document.getElementById('header'); // get initial position of the element
+    window.addEventListener('scroll', function(e) {
+      const yOffset = window.pageYOffset;
+      if(yOffset >= 400) {
+        header.classList.replace('absolute', 'fixed');
+        header.classList.add('shadow-md');
+        header.classList.add('bg-white');
+      } else {
+        header.classList.replace('fixed', 'absolute');
+        header.classList.remove('shadow-md');
+        header.classList.remove('bg-white');
+      }
     });
-
-    // $(window).scroll(function() {                  // assign scroll event listener
-
-    //     var currentScroll = $(window).scrollTop(); // get current position
-
-    //     if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-    //         $('.fixme').css({                      // scroll to that element or below it
-    //             position: 'fixed',
-    //             top: '0',
-    //             left: '0'
-    //         });
-    //     } else {                                   // apply position: static
-    //         $('.fixme').css({                      // if you scroll above it
-    //             position: 'static'
-    //         });
-    //     }
-
-    // });
   </script>
+  <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 </body>
 </html>

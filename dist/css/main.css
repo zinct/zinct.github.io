@@ -2,10 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-/* header ul li + li:before{
-  content: " | ";
-  padding: 0 10px;
-} */
+.active {
+  color: #4FD1C5;
+  font-weight: bold;
+}
 
 #projects .project-placeholder {
   background-image: url('../img/project-placeholder.png');
@@ -16,10 +16,28 @@ html {
   height: 100%;
 }
 
+/* Responsive Desktop */
 @media (min-width: 768px) {
   #projects .project-placeholder {
     width: 33rem;
     height: 20rem;
   }
+}
+
+/* Navbar Animation */
+header.fixed {
+  animation:slide-down 0.5s;
+  opacity:1;    
+}
+
+@keyframes slide-down {
+  0% {
+      opacity: 0;
+      transform: translateY(-100%);
+  } 
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  } 
 }
 
