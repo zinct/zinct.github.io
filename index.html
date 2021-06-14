@@ -27,7 +27,7 @@
         </ul>
       </div>
     </header>
-    <section class="flex items-center h-screen" id="home">
+    <section class="flex items-center h-screen container mx-auto" id="home">
       <div class="mx-auto">
         <p class="font-light text-lg md:text-3xl">Hello There !</p>
         <h2 class="text-4xl md:text-6xl font-medium">i’m Indra Mahesa</h2>
@@ -52,9 +52,9 @@
         </div>
       </div>
     </section>
-    <section id="skills">
-      <div class="container mx-auto">
-        <h2 class="mb-10 text-3xl">MY SKILLS</h2>
+    <div class="container px-4 mx-auto grid gap-y-20">
+      <section id="skills mx-auto">
+        <h2 class="mb-10 text-2xl font-bold text-teal">MY SKILLS</h2>
         <div class="grid gap-y-10 grid-cols-1 md:grid-cols-3">
           <div class="grid grid-cols-3">
             <div class="flex row-span-2 self-center justify-self-center justify-center items-center rounded-full w-14 h-14 bg-teal-100">
@@ -197,48 +197,48 @@
             <p class="text-gray-500 font-light col-span-2">I have 1 years experience in Linux.</p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="mb-52 container mx-auto grid gap-y-10" id="projects">
-      <h1 class="text-3xl">PROJECTS</h1>
-      <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5">
-        <div class="project-placeholder md:col-start-2 justify-self-end self-center flex justify-center items-center">
-          <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/pos.png" alt="Image of the projects">
-        </div>
-        <div class="md:col-start-1 md:row-start-1">
-          <h2 class="text-2xl md:text-4xl md:mb-6 font-thin">POINT OF SALES + E-COMMERCE</h2>
-          <p class="md:text-xl font-thin">
-            Sebuah website manajemen penjualan dengan berbagai macam fitur yang sangat lengkap serta laporan pembukuan setiap ber transaksi.
-          </p>
-          <p class="md:text-xl font-thin">
-            Website ini juga menawarkan halaman e-commerce untuk mempromosikan produk.
-          </p>
-          <div class="mt-5">
-            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Laravel 7</span>
-            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">VueJs 2</span>
-            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
-            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
+      </section>
+      <section class="mb-52 mx-auto grid gap-y-5" id="projects">
+        <h1 class="text-2xl font-bold text-teal">PROJECTS</h1>
+        <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5">
+          <div class="project-placeholder md:col-start-2 justify-self-end self-center flex justify-center items-center">
+            <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/pos.png" alt="Image of the projects">
+          </div>
+          <div class="md:col-start-1 md:row-start-1">
+            <h2 class="text-2xl md:text-4xl md:mb-6 font-thin">Point Of Sales + E-Commerce</h2>
+            <p class="md:text-xl font-thin">
+              Sebuah website manajemen penjualan dengan berbagai macam fitur yang sangat lengkap serta laporan pembukuan setiap ber transaksi.
+            </p>
+            <p class="md:text-xl font-thin">
+              Website ini juga menawarkan halaman e-commerce untuk mempromosikan produk.
+            </p>
+            <div class="mt-5">
+              <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Laravel 7</span>
+              <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">VueJs 2</span>
+              <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
+              <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5">
-        <div class="project-placeholder md:col-start-1 justify-self-start self-center flex justify-center items-center">
-          <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/pembayaran-spp.png" alt="Image of the projects">
-        </div>
-        <div class="md:col-start-2 md:row-start-1">
-          <h2 class="text-2xl md:text-4xl md:mb-6 font-thin">YukBayar</h2>
-          <p class="md:text-xl font-thin">  
-            YukBayar adalah sebuah aplikasi yang digunakan untuk kepentingan pembayaran uang SPP dan kegiatan siswa bagi sekolah-sekolah baik negeri maupun swasta.
-          </p>
-          <div class="mt-5">
-            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Laravel 7</span>
-            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">VueJs 2</span>
-            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
-            <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
+        <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5">
+          <div class="project-placeholder md:col-start-1 justify-self-start self-center flex justify-center items-center">
+            <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/pembayaran-spp.png" alt="Image of the projects">
+          </div>
+          <div class="md:col-start-2 md:row-start-1">
+            <h2 class="text-2xl md:text-4xl md:mb-6 font-thin">YukBayar</h2>
+            <p class="md:text-xl font-thin">  
+              YukBayar adalah sebuah aplikasi yang digunakan untuk kepentingan pembayaran uang SPP dan kegiatan siswa bagi sekolah-sekolah baik negeri maupun swasta.
+            </p>
+            <div class="mt-5">
+              <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Laravel 7</span>
+              <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">VueJs 2</span>
+              <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
+              <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 
   <script>
