@@ -20,16 +20,11 @@ html {
   opacity: 1;
 }
 
-body {
-  background-image: url('../img/background.png');
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-position: 0 32rem;
-}
-
 /* Responsive Desktop */
 @media (min-width: 768px) {
   body {
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
     background-size: 100vw;
     background-position: 0 25rem;
   }
