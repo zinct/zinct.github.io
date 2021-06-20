@@ -14,35 +14,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
   <title>Indra Mahesa</title>
 </head>
-<body>
+<body class="antialiased">
   <div class="grid gap-y-20">
-    <header class="absolute py-3 z-10 w-full" id="header">
+    <header class="absolute py-3 z-20 w-full" id="header">
       <div class="container mx-auto flex justify-between">
-        <h2 class="font-medium text-xl"><a href="javascript:void(0)">Portfolio</a></h2>
-        <ul class="md:flex hidden">
-          <li><a class="px-4 font-light text-lg text-gray-600 hover:text-black duration-100 active" href="#home">Home</a></li>
-          <li><a class="px-4 font-light text-lg text-gray-600 hover:text-black duration-100" href="#about">About</a></li>
-          <li><a class="px-4 font-light text-lg text-gray-600 hover:text-black duration-100" href="#skills">Skills</a></li>
-          <li><a class="px-4 font-light text-lg text-gray-600 hover:text-black duration-100" href="#projects">Projects</a></li>
-          <li><a class="px-4 font-light text-lg text-gray-600 hover:text-black duration-100" href="javascript:void(0)">Contact</a></li>
+        <h2 class="font-medium text-xl z-20"><a href="javascript:void(0)">Portfolio</a></h2>
+        <ul class="hidden pt-14 shadow-md pb-10 bg-white fixed top-0 left-0 right-0 z-0 -- md:shadow-none md:flex md:static md:h-full md:py-0" id="nav-bar">
+          <li class="py-2 px-5 md:p-0 hover:bg-teal-100 md:hover:bg-white"><a class="md:px-4 font-light text-md md:text-lg text-gray-600 hover:text-black duration-100" href="#home">Home</a></li>
+          <li class="py-2 px-5 md:p-0 hover:bg-teal-100 md:hover:bg-white"><a class="md:px-4 font-light text-md md:text-lg text-gray-600 hover:text-black duration-100" href="#about">About</a></li>
+          <li class="py-2 px-5 md:p-0 hover:bg-teal-100 md:hover:bg-white"><a class="md:px-4 font-light text-md md:text-lg text-gray-600 hover:text-black duration-100" href="#skills">Skills</a></li>
+          <li class="py-2 px-5 md:p-0 hover:bg-teal-100 md:hover:bg-white"><a class="md:px-4 font-light text-md md:text-lg text-gray-600 hover:text-black duration-100" href="#projects">Projects</a></li>
+          <li class="py-2 px-5 md:p-0 hover:bg-teal-100 md:hover:bg-white"><a class="md:px-4 font-light text-md md:text-lg text-gray-600 hover:text-black duration-100" href="#media">Media</a></li>
         </ul>
+        <a class="md:hidden flex justify-center items-center z-20" id="menu-toggle" href="javascript:void(0)">
+          <svg viewBox="0 0 100 80" width="23" height="23">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+        </a>
       </div>
     </header>
-    <section class="flex items-center h-screen container mx-auto" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" id="home">
+    <section class="flex flex-col-reverse md:flex-row items-center justify-center h-screen container mx-auto" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" id="home">
       <div class="mx-auto">
         <p class="font-light text-lg md:text-xl lg:text-3xl">Hello There !</p>
         <h2 class="text-4xl md:text-4xl lg:text-6xl font-medium">i’m Indra Mahesa</h2>
         <p class="font-light text-md md:text-xl lg:text-3xl text-right">i am a Web Developer</p>
         <a class="bg-teal hover:bg-teal-100 hover:text-black duration-200 py-1.5 md:py-2.5 text-center mt-2 w-full md:w-64 md:px-14 text-white rounded-md float-right" href="#projects">SEE MY WORK</a>
       </div>
-      <div class="mx-auto hidden md:flex">
-        <img class="lg:w-96 md:w-64" src="./dist/img/hero-image.png" alt="Indra Image">
+      <div class="mx-auto">
+        <img class="w-32 mb-5 md:mb-0 lg:w-96 md:w-64" src="./dist/img/hero-image.png" alt="Indra Image">
       </div>
     </section>
-    <div id="about" class=""></div>
-    <section class="bg-teal-100 mb-28" data-aos="fade-up" data-aos-once="true">
+    <div id="about" class="waypoint"></div>
+    <section class="bg-teal-100" data-aos="fade-up" data-aos-once="true">
       <div class="container mx-auto grid lg:grid-cols-2 h-full">
-        <div class="grid lg:grid-cols-2 gap-5 lg:relative -top-14 px-10 lg:h-140% mb-10">
+        <div class="grid lg:grid-cols-2 gap-5 lg:relative -top-14 lg:h-140% mb-10">
           <div class="flex flex-col justify-center items-center rounded-md shadow-lg bg-white row-span-2 row-start-2 p-10 md:p-5 lg:p-0">
             <img class="w-14" src="./dist/img/about/teamwork.svg" alt="">
             <p class="font-medium text-teal text-md uppercase mt-5">Team Work</p>
@@ -60,14 +67,20 @@
             <p class="font-medium text-teal text-md uppercase mt-5">Understandable</p>
           </div>
         </div>
-        <div class="flex flex-col justify-center row-start-1 md:col-start-2 p-14">
+        <div class="flex flex-col justify-center row-start-1 md:col-start-2 py-10 md:px-10">
           <h2 class="font-medium text-2xl">About Me</h2>
-          <p class="font-light text-xl text-gray-600">Experienced Web Developer with a demonstrated history of working in the program development industry. Skilled in Laravel, Version Control Tools, PHP, Databases, and CodeIgniter. Strong engineering professional graduated from SMK BAKTI NUSANTARA 666.</p>
+          <p class="font-light text-xl text-gray-600">
+            I graduated from SMK Bakti Nusantara 666 as a Software Engineering expertise. I am a responsible person,
+            Problem Solving, And can work in a team
+            well.<br />
+            I have experience as Web Developer. I have
+            expertise to create a web as well as manage a server.
+          </p>
         </div>
       </div>
     </section>
     <div class="container mx-auto grid gap-y-20">
-      <div id="skills" class=""></div>
+      <div id="skills" class="waypoint"></div>
       <section data-aos="fade-up" data-aos-once="true">
         <h2 class="mb-10 text-2xl font-bold text-teal">MY SKILLS</h2>
         <div class="grid gap-y-10 grid-cols-1 md:grid-cols-3">
@@ -213,11 +226,11 @@
           </div>
         </div>
       </section>
-      <div id="projects" class=""></div>
-      <section class="mb-52 mx-auto grid gap-y-8">
+      <div id="projects" class="waypoint"></div>
+      <section class="mx-auto grid gap-y-8">
         <h1 class="text-2xl font-bold text-teal">PROJECTS</h1>
         <div class="grid gap-y-20">
-          <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5" data-aos="fade-right" data-aos-once="true">
+          <div class="grid md:px-0 md:grid-cols-2 gap-y-5 gap-x-20" data-aos="fade-right" data-aos-once="true">
             <div class="project-placeholder md:col-start-2 justify-self-center self-center flex justify-center items-center">
               <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/pos.png" alt="Image of the projects">
             </div>
@@ -237,7 +250,7 @@
               </div>
             </div>
           </div>
-          <div class="grid px-5 md:px-0 md:grid-cols-2 gap-y-5" data-aos="fade-left" data-aos-once="true">
+          <div class="grid md:px-0 md:grid-cols-2 gap-y-5 gap-x-20" data-aos="fade-left" data-aos-once="true">
             <div class="project-placeholder md:col-start-1 justify-self-start self-center flex justify-center items-center">
               <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/pembayaran-spp.png" alt="Image of the projects">
             </div>
@@ -256,10 +269,26 @@
           </div>
         </div>
       </section>
+      <div id="media" class="waypoint"></div>
+      <section class="flex flex-col justify-center items-center mb-40">
+        <h2 class="text-2xl font-light">SOCIAL MEDIA</h2>
+        <div class="flex w-full justify-center mt-3">
+          <a href="https://facebook.com/indra.mahesa.1829/" target="_blank"><img class="w-8 mx-2 transform hover:-translate-y-3 duration-200" src="./dist/img/media/facebook.svg" alt="facebook logo"></a>
+          <a href="https://instagram.com/indraaa_mmm" target="_blank"><img class="w-8 mx-2 transform hover:-translate-y-3 duration-200" src="./dist/img/media/instagram.svg" alt="instagram logo"></a>
+          <a href="https://github.com/zinct" target="_blank"><img class="w-8 mx-2 transform hover:-translate-y-3 duration-200" src="./dist/img/media/github.svg" alt="github logo"></a>
+          <a href="https://linkedin.com/in/indramahesa" target="_blank"><img class="w-8 mx-2 transform hover:-translate-y-3 duration-200" src="./dist/img/media/linkedin.svg" alt="linkedin logo"></a>
+          <a href="https://twitter.com/indraaa_mmm" target="_blank"><img class="w-8 mx-2 transform hover:-translate-y-3 duration-200" src="./dist/img/media/twitter.svg" alt="twitter logo"></a>
+        </div>
+      </section>
+      <section class="flex flex-col justify-center items-center py-5">
+        <p class="font-light">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        <p class="font-light">Copyright &copy; 2021 <a class="font-medium" href="https://github.com/zinct">Indra Mahesa</a> - All Right Reserved</p>
+      </section>
     </div>
   </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     AOS.init();
 
@@ -276,7 +305,36 @@
         header.classList.remove('bg-white');
       }
     });
+    
+    // const waypoints = document.getElementsByClassName('waypoint');
+    // const links = document.querySelectorAll(`header ul li a`);
+    // function resetLinks() {
+    //   [...links].forEach(function(link) {
+    //     link.classList.remove('active');
+    //   });
+    // }
+
+    // [...waypoints].forEach(function(el) {
+    //   new Waypoint({
+    //     element: el,
+    //     handler: function(direction) {
+    //       const id = el.getAttribute('id');
+    //       const targetLink = document.querySelector(`header ul li a[href="#${id}"]`);
+    //       resetLinks();
+    //       targetLink.classList.add('active')
+    //       console.log(id)
+    //     },
+    //     offset: 'bottom-in-view',
+    //     group: 'waypoint'
+    //   })
+    // });
+
+    // Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navBar = document.getElementById('nav-bar');
+    menuToggle.addEventListener('click', function() {
+      navBar.classList.toggle('hidden')
+    });
   </script>
-  <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 </body>
 </html>
