@@ -17,7 +17,7 @@
 </head>
 <body class="antialiased">
   <div class="grid gap-y-20">
-    <header class="absolute py-3 z-20 w-screen" id="header">
+    <header class="absolute py-3 z-20 w-full" id="header">
       <div class="container mx-auto flex justify-between">
         <h2 class="font-bold text-xl z-20"><a href="javascript:void(0)">Portfolio</a></h2>
         <ul class="hidden pt-14 shadow-md pb-10 bg-white fixed top-0 left-0 right-0 z-0 -- md:shadow-none md:flex md:static md:h-full md:py-0" id="nav-bar">
@@ -36,18 +36,20 @@
         </a>
       </div>
     </header>
-    <section class="flex flex-col-reverse md:flex-row items-center justify-center h-screen container mx-auto" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" id="home">
-      <div class="mx-auto">
-        <p class="font-light text-sm md:text-xl lg:text-3xl">Hello There !</p>
-        <h2 class="text-4xl md:text-4xl lg:text-6xl font-medium">i’m Indra Mahesa</h2>
-        <p class="font-light text-sm md:text-xl lg:text-3xl text-right">i am a Web Developer</p>
-        <a class="bg-teal hover:bg-teal-100 hover:text-black duration-200 py-1.5 md:py-2.5 text-center mt-2 w-full md:w-64 md:px-14 text-white rounded-md float-right" href="#projects">SEE MY WORK</a>
-      </div>
-      <div class="mx-auto hidden md:block">
-        <img class="w-32 mb-5 md:mb-0 lg:w-96 md:w-64" src="./dist/img/hero-image.png" alt="Indra Image">
+    <section id="home">
+      <div class="container h-screen mx-auto flex flex-col-reverse md:flex-row items-center justify-center" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+        <div class="mx-auto">
+          <p class="font-light text-sm md:text-xl lg:text-3xl">Hello There !</p>
+          <h2 class="text-4xl md:text-4xl lg:text-6xl font-medium">i’m Indra Mahesa</h2>
+          <p class="font-light text-sm md:text-xl lg:text-3xl text-right">i am a Web Developer</p>
+          <a class="bg-teal hover:bg-teal-100 hover:text-black duration-200 py-1.5 md:py-2.5 text-center mt-2 w-full md:w-64 md:px-14 text-white rounded-md float-right" href="#projects">SEE MY WORK</a>
+        </div>
+        <div class="mx-auto hidden md:block">
+          <img class="w-32 mb-5 md:mb-0 lg:w-96 md:w-64" src="./dist/img/hero-image.png" alt="Indra Image">
+        </div>
       </div>
     </section>
-    <div id="about" class="waypoint"></div>
+    <div class="waypoint" id="about"></div>
     <section class="bg-teal-100" data-aos="fade-up" data-aos-once="true">
       <div class="container mx-auto grid lg:grid-cols-2 h-full">
         <div class="grid lg:grid-cols-2 gap-5 lg:relative -top-14 lg:h-140% mb-10">
@@ -230,7 +232,7 @@
       <div id="projects" class="waypoint"></div>
       <section class="mx-auto grid gap-y-8">
         <h1 class="text-2xl font-bold text-teal">PROJECTS</h1>
-        <div class="grid gap-y-20">
+        <div class="grid gap-y-10">
           <div class="grid md:px-0 md:grid-cols-2 gap-y-5 gap-x-20" data-aos="fade-right" data-aos-once="true">
             <div class="project-placeholder md:col-start-2 justify-self-center self-center flex justify-center items-center">
               <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/pos.png" alt="Image of the projects">
@@ -263,6 +265,69 @@
               <div class="mt-5">
                 <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Laravel 7</span>
                 <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">VueJs 2</span>
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
+              </div>
+            </div>
+          </div>
+          <div class="grid md:px-0 md:grid-cols-2 gap-y-5 gap-x-20" data-aos="fade-right" data-aos-once="true">
+            <div class="project-placeholder md:col-start-2 justify-self-center self-center flex justify-center items-center">
+              <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/penjualan-buku.png" alt="Image of the projects">
+            </div>
+            <div class="md:col-start-1 md:row-start-1">
+              <h2 class="text-2xl md:text-4xl md:mb-6 font-thin">Penjualan Buku</h2>
+              <p class="md:text-xl font-thin">
+                Sebuah website manajemen penjualan buku dengan berbagai macam fitur salah satunya melakukan transaksi dengan via Transfer.
+              </p>
+              <div class="mt-5">
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Codeigniter 3</span>
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
+              </div>
+            </div>
+          </div>
+          <div class="grid md:px-0 md:grid-cols-2 gap-y-5 gap-x-20" data-aos="fade-right" data-aos-once="true">
+            <div class="project-placeholder md:col-start-1 justify-self-start self-center flex justify-center items-center">
+              <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/starbucks.png" alt="Image of the projects">
+            </div>
+            <div class="md:col-start-2 md:row-start-1">
+              <h2 class="text-2xl md:text-4xl md:mb-6 font-thin">Starbuck Menus</h2>
+              <p class="md:text-xl font-thin">  
+                Startbuck Menus adalah sebuah website yang menampilkan menu starbuck dengan mengimplementasikan Restful API.
+              </p>
+              <div class="mt-5">
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
+              </div>
+            </div>
+          </div>
+          <div class="grid md:px-0 md:grid-cols-2 gap-y-5 gap-x-20" data-aos="fade-right" data-aos-once="true">
+            <div class="project-placeholder md:col-start-2 justify-self-center self-center flex justify-center items-center">
+              <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/e-parking.png" alt="Image of the projects">
+            </div>
+            <div class="md:col-start-1 md:row-start-1">
+              <h2 class="text-2xl md:text-4xl md:mb-6 font-thin">E-Parking</h2>
+              <p class="md:text-xl font-thin">
+                Sebuah website manajemen parkir dengan fitur pembukuan dan input output oleh petugas.
+              </p>
+              <div class="mt-5">
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Codeigniter 3</span>
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
+              </div>
+            </div>
+          </div>
+          <div class="grid md:px-0 md:grid-cols-2 gap-y-5 gap-x-20" data-aos="fade-right" data-aos-once="true">
+            <div class="project-placeholder md:col-start-1 justify-self-start self-center flex justify-center items-center">
+              <img class="rounded-lg w-max md:max-w-sm border-4 border-teal-100 cursor-pointer md:transform hover:scale-110 duration-300" src="./dist/img/projects/koperasi.png" alt="Image of the projects">
+            </div>
+            <div class="md:col-start-2 md:row-start-1">
+              <h2 class="text-2xl md:text-4xl md:mb-6 font-thin">Aplikasi Koperasi</h2>
+              <p class="md:text-xl font-thin">  
+                Aplikasi pembukuan koperasi adalah sebuah teknologi aplikasi yang membantu pencatatan transaksi hingga perhitungan keuangan secara otomatis. Manfaat yang ditawarkan oleh aplikasi ini akan sangat membantu pekerjaan para pengurus.
+              </p>
+              <div class="mt-5">
+                <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Laravel 7</span>
                 <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Bootstrap 4</span>
                 <span class="bg-teal-100 inline-block m-1 rounded-full px-7 py-1 text-green-900">Jquery</span>
               </div>
